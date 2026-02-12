@@ -17,6 +17,14 @@ public class LexicalTwistPuzzle {
             return;
         }
 
+        String reverseWord1 = new StringBuilder(word1).reverse().toString();
+
+        if (word2.equalsIgnoreCase(reverseWord1)) {
+            System.out.println(word2 + " is the reverse of " + word1);
+        } else {
+            System.out.println(word2 + " is NOT the reverse of " + word1);
+        }
+
         scanner.close();
     }
 }
