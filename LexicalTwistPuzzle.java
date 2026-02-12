@@ -12,6 +12,11 @@ public class LexicalTwistPuzzle {
         System.out.print("Enter second word: ");
         String word2 = scanner.nextLine();
 
+        if (word1.contains(" ") || word2.contains(" ")) {
+            System.out.println("Error: Please enter single words only.");
+            return;
+        }
+
         scanner.close();
     }
 }
